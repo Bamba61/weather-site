@@ -10,7 +10,7 @@ let img = document.getElementById("cloud");
 let back = document.querySelector("body");
 searchButton.addEventListener("click",function(){
     let city = searchBar.value.trim();
-const apiKey =  "c848766edc4a004a75ca3a1914a8aa14"
+const apiKey =  "My_API_KEY"
 const apiUrl =  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 fetch(apiUrl)
@@ -59,5 +59,6 @@ function updateUi(data){
     descv.innerHTML = (Math.round(data.main.feels_like * 1.8) + 32 + "°");
 
 }
+
 
 
